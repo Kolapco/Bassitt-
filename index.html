@@ -219,15 +219,24 @@ body{
     opacity: 1;
 }
 
-    .rodape_principal {
+#rodape {
+    width: 100%;
+    background-color: #181818;
+    padding: 20px 0;
     color: #fff;
+    text-align: center;
+}
+
+.rodape_principal {
+    max-width: 1255px;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .rodape_contato {
-    text-align: center;
     margin-top: 10px;
 }
 
@@ -239,6 +248,30 @@ body{
 .rodape_contato a:hover {
     text-decoration: underline;
 }
+
+.rodape_redes {
+    margin-top: 10px;
+}
+
+.rodape_redes a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.rodape_redes a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 540px) {
+    .rodape_redes a {
+        font-size: 0.9rem;
+    }
+}
+    
+
 
 .projetos_principal button{
     background-color: #181818;
@@ -459,18 +492,22 @@ body{
     </section>
     <!--Fim projetos-->
 
-    <!--Início Rodapé-->
+    <!-- Início Rodapé -->
 <footer id="rodape">
     <div class="rodape_principal">
         <span><strong>Scoundrel</strong> - Todos os direitos reservados</span>
         <div class="rodape_contato">
-            <p>Contato: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
-            <p>Localização: Rua Exemplo, 123, Cidade, Estado</p>
-            <p>Instagram: <a href="https://www.instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
+            <p><strong>Contato:</strong> <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+            <p><strong>Localização:</strong> Rua Exemplo, 123, Cidade, Estado</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
+        </div>
+        <div class="rodape_redes">
+            <a href="https://www.instagram.com/seuusuario" target="_blank">Instagram</a>
         </div>
     </div>
 </footer>
-<!--Fim Rodapé-->
+<!-- Fim Rodapé -->
+    
     
 </body>
  </html>

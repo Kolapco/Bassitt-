@@ -219,6 +219,27 @@ body{
     opacity: 1;
 }
 
+    .rodape_principal {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape_contato {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rodape_contato a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.rodape_contato a:hover {
+    text-decoration: underline;
+}
+
 .projetos_principal button{
     background-color: #181818;
     color: #fff;
@@ -439,11 +460,17 @@ body{
     <!--Fim projetos-->
 
     <!--Início Rodapé-->
-    <footer id="rodape">
-        <div class="rodape_principal">
-            <span><strong>Scoundrel</strong> - Todos os direitos reservados</span>
+<footer id="rodape">
+    <div class="rodape_principal">
+        <span><strong>Scoundrel</strong> - Todos os direitos reservados</span>
+        <div class="rodape_contato">
+            <p>Contato: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+            <p>Localização: Rua Exemplo, 123, Cidade, Estado</p>
+            <p>Instagram: <a href="https://www.instagram.com/seuusuario" target="_blank">@seuusuario</a></p>
         </div>
-    </footer>
-    <!--Fim Rodapé-->
+    </div>
+</footer>
+<!--Fim Rodapé-->
+    
 </body>
  </html>
